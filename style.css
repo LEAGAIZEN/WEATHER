@@ -31,6 +31,7 @@ font-family:'poppins',sans-serif;
     margin: 10px;
 }
 form .display{
+    border-color:white ;
     display: flex;
     justify-content: flex-end;
     margin: 20px 0;
@@ -47,5 +48,5 @@ form input.equal{
 
 }
 form input.operator{
-    color: green;
+    color: rgb(0, 6, 92);
 }
