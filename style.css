@@ -50,3 +50,6 @@ form input.equal{
 form input.operator{
     color: rgb(0, 6, 92);
 }
+form input.hit{
+    color: aquamarine;
+}
