@@ -1,25 +1,10 @@
-function calculateTrig(func) {
-    let display = document.forms[0].display;
-    try {
-        // Convert degrees to radians and evaluate the trigonometric function
-        let result = eval('Math.' + func + '(Math.PI/180 * ' + parseFloat(display.value) + ')');
-        
-        // Round the result to avoid precision issues
-        display.value = Math.round(result * 1e10) / 1e10;
-    } catch (error) {
-        display.value = 'Error';
-    }
+const apikey = "f72b3ada2cf4d4abd497cd90e309f025";
+const apiurl = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=bangalore&appid=${apikey}`;
+
+async function checkweather() {
+  const response = await fetch(apiurl);
+  const data = await response.json();
+  console.log(data);
 }
 
-function calculateLog() {
-    let display = document.forms[0].display;
-    try {
-        // Evaluate the logarithmic function
-        let result = eval('Math.log(' + parseFloat(display.value) + ')');
-        
-        // Round the result to avoid precision issues
-        display.value = Math.round(result * 1e10) / 1e10;
-    } catch (error) {
-        display.value = 'Error';
-    }
-}
+checkweather();

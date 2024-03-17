@@ -1,55 +1,77 @@
 *{
-margin: 0;
-padding: 0;
-font-family:'poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    box-sizing: border-box;
 }
-.container{
-    width:100%;
-    height:100vh;
-    background-color: rgb(168, 228, 228);
+body{
+    background:#41B3A3;
+}
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(#e66465, #9198e5);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.search{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.calculator{
-    background: grey;
-    padding: 20px;
-    border-radius: 10px;
-
-}
-.calculator form input{
+.search input{
     border: 0;
     outline: 0;
+    background: #ebffeb;
+    color: #e66465;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebffeb;
+    border-radius: 60%;
     width: 60px;
     height: 60px;
-    border-radius: 10px;
-    box-shadow: -8px -8px 15px rgba(255, 255 , 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
-    background: transparent;
-    font-size: 20px;
-    color: #fff;
     cursor: pointer;
-    margin: 10px;
 }
-form .display{
-    border-color:white ;
+.search button img{
+    width: 16px;
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+.weather h1{
+font-size: 45px;
+font-weight:400px;
+}
+.details{
     display: flex;
-    justify-content: flex-end;
-    margin: 20px 0;
-
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
 }
-form .display input{
-    text-align: right;
-    flex: 1;
-    font-size: 45px;
-    box-shadow: none;
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
 }
-form input.equal{
-    width: 145px;
-
+.col img{
+    width:40px ;
+    margin-right: 10px;
 }
-form input.operator{
-    color: rgb(0, 6, 92);
-}
-form input.hit{
-    color: aquamarine;
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
 }
