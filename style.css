@@ -75,3 +75,6 @@ font-weight:400px;
     font-size: 28px;
     margin-top: -6px;
 }
+.weather{
+    display: none;
+}
